@@ -1,0 +1,232 @@
+%-------------------------
+% Resume in Latex
+% Author : Cameron Brill
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\usepackage{tgadventor}
+%\renewcommand*\familydefault{\sfdefault}
+%\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\setmainfont[
+  Ligatures=TeX,
+  UprightFont=*-Light,
+  ItalicFont=*-LightItalic,
+  BoldFont=*-SemiBold
+]{Poppins}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemDescription}[1]{
+  \item\small{
+    #1 \vspace{-2pt}
+  }
+}
+
+\newcommand{\resumeHonorsItem}[1]{
+  \item\small{
+    #1 \vspace{-6pt}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectItem}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small Skills Used: #2} \\
+    \end{tabular*}\vspace{-5pt}
+  } 
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeProjectListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeProjectListEnd}{\end{itemize}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeInnerItemListStart}{\begin{itemize}}
+\newcommand{\resumeInnerItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://cameronbrill.me/}{\Large Cameron Brill}} & \href{mailto:contact@cameronbrill.me}{contact@cameronbrill.me}\\
+  \href{http://cameronbrill.me/}{cameronbrill.me} & 469-401-1162 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Texas A\&M University}{College Station, TX}
+      {Bachelor of Science in Computer Science;  GPA: 3.41}{Expected Dec 2021}
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \end{tabular*}\vspace{-5pt}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Microsoft}{Redmond, Washington}
+      {Software Engineer Intern}{May 2020 - Present(Ending Aug 2020)}
+      \resumeItemListStart
+        \resumeItemDescription{Developing novel streaming telemetry PoC with \textbf{gRPC, Telegraf, InfluxDB, and Grafana}.}
+        \resumeItemDescription{Planning production deployment accross \textbf{4000} network switches with \textbf{Ansible} automation.}
+        \resumeItemDescription{Constantly interfacing with vendors and external orgs to properly and efficiently execute project.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {State Farm}{Dallas, TX}
+      {Software Engineer Intern}{May 2019 - Aug 2019}
+      \resumeItemListStart
+        \resumeItemDescription{Spearheaded microservice development in \textbf{Java Spring Boot} for web app used by 60k insurance agents daily.}
+        \resumeItemDescription{Increased overall code throughput by \textbf{18\%} with custom \textbf{GitLab CI/CD} pipelines and cloud-enabled Config Server.}
+        \resumeItemDescription{Created unit tests (JUnit) and UI tests to improve testing coverage to \textbf{99\%} for above mentioned project.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Dynamic MC}{College Station, TX}
+      {Founder and Software Engineer}{Nov 2019 - Present}
+      \resumeItemListStart
+        \resumeItemDescription{Open-source solution to affordable Minecraft servers. Uses \textbf{AWS EC2} hourly instances for efficient spending.}
+        \resumeItemDescription{Currently developing AWS connection API in \textbf{Go} and overseeing a developer creating frontend in React.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {TAMUhack}{College Station, TX}
+      {Tech Lead}{Oct 2019 - Present}
+      \resumeItemListStart
+        \resumeItemDescription{Led team of 5 developers to maintain and generalize \textbf{Django} registration system used by \textbf{4000+} people.}
+        \resumeItemDescription{Secured \textbf{\$4k} in sponsorship contributing to overall \$75k of funding for the event.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Reveal Modern}{Dallas, TX}
+      {Software Engineer Intern and Full-Stack Developer}{Spring 2018 and Spring 2019 Respectively}
+      \resumeItemListStart
+        \resumeItem{2019}
+          {Automated processes with \textbf{Python} and ads with \textbf{JavaScript} reducing developer workload by \textbf{25\%}.}
+        \resumeItem{2018}
+          {Developed webpages for 10+ clients using HTML/CSS, \textbf{Javascript}, and PHP/WordPress.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects} 
+  \resumeProjectListStart 
+    \resumeProjectItem{True Colors}{Python, Pandas, Requests, Beatiful Soup, Jupyter, MongoDB Atlas}
+      \resumeItemListStart
+        \resumeItemDescription{Web scraper that analyzes a company's reaction to and contribution to society during a pandemic.}
+        \resumeItemDescription{Scraped data with Requests, cleaned with Pandas and Beautiful Soup, and hosted on MongoDB Atlas cluster.}
+      \resumeItemListEnd
+    \resumeProjectItem{InFlightful}{Python, Pandas, \LaTeX}
+      \resumeItemListStart
+        \resumeItemDescription{Application and analysis for data science competition between undergraduates and graduates at A\&M.}
+        \resumeItemDescription{Created models to analyze common factors in causing flight delays and predict flight delays.}
+      \resumeItemListEnd
+    \resumeProjectItem{The Sustainability Index}{Javascript, Express.js, MongoDB, Python, Pandas}
+      \resumeItemListStart
+        \resumeItemDescription{Stock index coupled with scores for environmental+social impact and labor practices.}
+        \resumeItemDescription{Created API with Express.js and MongoDB and used Pandas to clean and join 4 company info datasets.}
+      \resumeItemListEnd
+    \resumeProjectItem{Taco 'bout It}{Python, Flask, Pandas}
+      \resumeItemListStart
+        \resumeItemDescription{Website to tell potential taco/burrito shop owners competitive location and pricing strategies.}
+        \resumeItemDescription{Created API with Flask and cleaned and analyzed taco/burrito restaurant data with Pandas.}
+      \resumeItemListEnd
+  \resumeProjectListEnd
+
+%--------Honors and Awards------------ 
+\section{Honors \& Awards}
+  \resumeSubHeadingListStart 
+    \resumeSubItem{MLH Top 50 Hacker of 2020}{Based on my projects and community impact, out of 100,000 students who participated in hackathons, Major Leauge Hacking chose my story to be one of 50 recognized on this list.}
+    %--won \%5800 in awards at 12+ hackathons
+    \resumeSubItem{1517 Fellow}{Selected from 99 teams to be awarded \$11k in funding at hack:now to create a startup.}
+    \resumeSubItem{Competitions I've Won At}{HackTX19, HackSMU19, HackUNT19/20, 
+    Wacode19, HackHouston19, RowdyHacks20, Hack Kosice Digital20, Hack Quarantine20, TAMIDS Data Science 
+    Competition 2020, HackDSC20, hack:now20, CitrusHacks20, EarthXHack20.}
+    \resumeSubItem{Hackathons I've Mentored At}{Howdy Hack 2019(Top Mentor), TAMUhack 2020(Organizer), Hacklahoma 2020.} 
+  \resumeSubHeadingListEnd
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: (Profficient): Python, Java, Typescript, Javascript, (Familiar): GoLang, C++, SQL}
+      \hfill
+    }\vspace{-5pt}
+    \item{
+      \textbf{Technologies}{: AWS, Tensorflow, Keras, Pandas, Flask, NodeJS, Express, Spring Boot}
+      \hfill
+    }\vspace{-6pt}
+    \item{
+      \textbf{Databases/Environments}{: PostgreSQL, MySQL, MongoDB, UNIX (Arch Linux, Debian Linux, MacOS)}
+    }
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}

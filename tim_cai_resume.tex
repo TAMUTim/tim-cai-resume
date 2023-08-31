@@ -1,0 +1,221 @@
+%-------------------------
+% Resume in Latex
+% Author : Tim Cai
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\usepackage{tgadventor}
+%\renewcommand*\familydefault{\sfdefault}
+%\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+%\setmainfont[
+% Ligatures=TeX,
+%  UprightFont=*Light,
+%  ItalicFont=*LightItalic,
+%  BoldFont=*SemiBold
+%]{Poppins}
+\setmainfont{Calibri}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemDescription}[1]{
+  \item\small{
+    #1 \vspace{-2pt}
+  }
+}
+
+\newcommand{\resumeHonorsItem}[1]{
+  \item\small{
+    #1 \vspace{-6pt}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeLeadershipItem}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectItem}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small Tools Used: #2} \\
+    \end{tabular*}\vspace{-5pt}
+  } 
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeProjectListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeProjectListEnd}{\end{itemize}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeInnerItemListStart}{\begin{itemize}}
+\newcommand{\resumeInnerItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+  {\huge Timothy Cai} \\ \href{mailto:timcai.tyc@gmail.com}{timcai.tyc@gmail.com} $\vert$ \href{https://www.timcai.dev/}{timcai.dev} $\vert$ 832-951-7889
+\end{center}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Texas A\&M University}{College Station, TX}
+      {Bachelor of Science in Computer Science;  \textbf{GPA: 3.82}}{Graduating May 2024}
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \end{tabular*}\vspace{0pt}
+    \resumeItemListStart
+    	\resumeItemDescription{\textbf{Relevant Coursework:}}{Data Structures and Algorithms, Competitive Programming (\textbf{C++}), Probability, Discrete Mathematics, Analysis of Algorithms, Formal Languages and Automata, Computer Organization, Distributed Networks and Systems}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+  	\resumeSubheading
+  		{Frogslayer}{College Station, TX}
+  		{Junior Software Developer}{June 2022 - Present}
+  		\resumeItemListStart
+  			\resumeItemDescription{Working at a software consulting firm, with projects focusing on \textbf{Angular} with \textbf{TypeScript} and \textbf{.NET Core}}
+  			\resumeItemDescription{Designed and reformatted data transfer system to reduce observable customer delay by up to \textbf{70\%}}
+  			\resumeItemDescription{Responsible for tight turnaround in fast paced web development environment, comfortable with ambiguity}
+  			\resumeItemDescription{Implemented numerous features affecting everything from UI to customer interaction with \textbf{RxJS} and \textbf{React}}
+  		\resumeItemListEnd
+  	\resumeSubheading
+  		{Aggie Research Program}{College Station, TX}
+  		{Researcher}{Sept. 2021 - Aug. 2022}
+  		\resumeItemListStart
+  			\resumeItemDescription{Designed multi-faceted non-deterministic model simulating society to observe effects of media}
+  			\resumeItemDescription{Implemented mentioned model in \textbf{NetLogo} and processed over 30 million data points through \textbf{R} and \textbf{Python}}
+  			\resumeItemDescription{Worked closely with graduate students and professors on a multi-disciplinary team to design statistical models}
+  		\resumeItemListEnd
+	\resumeSubheading
+  		{Senseye}{Austin, TX}
+  		{Software Engineer \& Machine Learning Intern}{Jun. 2023 - Aug. 2023}
+  		\resumeItemListStart
+  			\resumeItemDescription{Designed and implemented internal \textbf{Python} library to autonomously pull data from \textbf{AWS Athena/Glue} \textbf{S3}}
+  			\resumeItemDescription{Intended to be lightweight and exist on the cloud as a piece of a larger machine learning pipeline using \textbf{Sagemaker}}
+  			\resumeItemDescription{Able to manipulate data through \textbf{ffmpeg} commands and can isolate keyframes within videos to probe machine learning models for accuracy}
+  		\resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects} 
+  \resumeProjectListStart 
+    \resumeProjectItem{Found in Translation}{Python, JavaScript, Slack Bolt, Flask, Node.js, Co:Here, Pinecone, Azure}
+      \resumeItemListStart
+        \resumeItemDescription{\textbf{Overall Winner} at the Cohere 2023 Semantic Search Hackathon}
+        \resumeItemDescription{Intelligent Slack bot that can \textbf{semantic search} for messages across languages as well as analyze emotions in a server}
+        \resumeItemDescription{Utilized \textbf{Flask} to train \textbf{CoHere} models on the \textbf{Google GoEmotion dataset}, with storage through \textbf{Pinecone}, and everything hosted on \textbf{Azure}}
+        \resumeItemDescription{Developed interface with \textbf{Slack Bolt API}, and improving time efficiency by up to \textbf{50\%} by designing a \textbf{multithreaded} system of back-end calls,}
+      \resumeItemListEnd
+  \resumeProjectItem{Mock Shell}{C++, PHP}
+      \resumeItemListStart
+        \resumeItemDescription{Mock Linux shell accepting multiple commands and flags with \textbf{multithreading} capability}
+        \resumeItemDescription{Utilized \textbf{POSIX} standard to implement and maintain low level, efficient C++ code} 
+        \resumeItemDescription{Developed and designed systems for piping, file I/O redirection, background processes, with the option of multithreading for each}
+      \resumeItemListEnd
+  \resumeProjectItem{makea.horse}{Javascript, HTML, CSS}
+      \resumeItemListStart
+        \resumeItemDescription{Fun website displaying generated image at a certain time created for a Speed Development Hackathon}
+        \resumeItemDescription{Written in a single Javascript file as emphasis on \textbf{monolithic} architecture and deployed through \textbf{Netlify}} 
+      \resumeItemListEnd
+   \resumeProjectItem{The Galactic Algorithm}{Python, tensorflow, keras, PIL}
+      \resumeItemListStart
+        \resumeItemDescription{Heuristic algorithm that was designed to descramble a large image of mixed quadrants, written for 2023 TAMU Datathon}
+        \resumeItemDescription{Designed three separate heuristics which combined into the end algorithm, with a final accuracy of \textbf{97\%}}
+        \resumeItemDescription{Utilized augmented \textbf{Nearest Bodies} algorithm for object detection, and further reduced inaccuracy by matching edges} 
+      \resumeItemListEnd
+   \resumeProjectItem{Personal Server}{C++, Twilio, Pinecone}
+      \resumeItemListStart
+        \resumeItemDescription{Simple multithreaded server that reads/writes various inputs regarding personal calendar, habits, and data through \textbf{Twilio SMS}}
+        \resumeItemDescription{Designed with \textbf{multithreading} in mind, has capacity of handling single requests up to \textbf{1.2 GB}, with data stored on \textbf{Pinecone}}
+      \resumeItemListEnd
+    \resumeProjectItem{Small Distributed Social Network}{C++, gRPC, glog, cmake}
+      \resumeItemListStart
+        \resumeItemDescription{Small distributed implementation of a social network service utilizing Chubby lock system and server clusters, and built with \textbf{grpc}. Designed to be scalable, fault tolerant, and highly available where failures are handled transparently to users. }
+        \resumeItemDescription{Server clusters split into master / slave, with \textbf{Chubby} running as coordinator, close to \textbf{99\%} uptime.}
+      \resumeItemListEnd
+  \resumeProjectListEnd
+%--------Leadership-------------------
+
+%--------Honors and Awards------------ 
+
+%--------PROGRAMMING SKILLS------------
+\section{Technical Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{
+      \textbf{Languages}} {\textit{(Proficient):} Python, Java, C++, Typescript, HTML, CSS \textit{(Familiar):} Go, Scheme, SQL, Rust}
+    \resumeSubItem{
+      \textbf{Technologies}}{Pinecone, Pandas, React, Angular, .NET Core, Node.js, Firebase, Heroku, gRPC, glog, cmake, Azure, AWS}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
