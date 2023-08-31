@@ -27,7 +27,7 @@
 %  ItalicFont=*LightItalic,
 %  BoldFont=*SemiBold
 %]{Poppins}
-\setmainfont{Calibri}
+\setmainfont{Trebuchet MS}
 
 
 \pagestyle{fancy}
@@ -117,7 +117,7 @@
 
 %----------HEADING-----------------
 \begin{center}
-  {\huge Timothy Cai} \\ \href{mailto:timcai.tyc@gmail.com}{timcai.tyc@gmail.com} $\vert$ \href{https://www.timcai.dev/}{timcai.dev} $\vert$ 832-951-7889
+  {\huge Timothy Cai} \\ \href{mailto:timcai.tyc@gmail.com}{timcai.tyc@gmail.com} $\vert$ \href{https://github.com/TAMUTim}{github.com/TAMUTim} $\vert$ 832-951-7889
 \end{center}
 
 %-----------EDUCATION-----------------
@@ -125,11 +125,11 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Texas A\&M University}{College Station, TX}
-      {Bachelor of Science in Computer Science;  \textbf{GPA: 3.82}}{Graduating May 2024}
+      {Bachelor of Science in Computer Science}{Graduating May 2025}
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
     \end{tabular*}\vspace{0pt}
     \resumeItemListStart
-    	\resumeItemDescription{\textbf{Relevant Coursework:}}{Data Structures and Algorithms, Competitive Programming (\textbf{C++}), Probability, Discrete Mathematics, Analysis of Algorithms, Formal Languages and Automata, Computer Organization, Distributed Networks and Systems}
+    	\resumeItemDescription{\textbf{Relevant Coursework:}}{Data Structures and Algorithms, Problem Solving Strategies, Probability, Discrete Mathematics, Analysis of Algorithms, Formal Languages and Automata, Computer Organization, Distributed Networks and Systems, Airport Systems and Design}
     \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -156,7 +156,7 @@
   		\resumeItemListEnd
 	\resumeSubheading
   		{Senseye}{Austin, TX}
-  		{Software Engineer \& Machine Learning Intern}{Jun. 2023 - Aug. 2023}
+  		{Software Engineer \& Machine Learning Intern}{May 2023 - Aug. 2023}
   		\resumeItemListStart
   			\resumeItemDescription{Designed and implemented internal \textbf{Python} library to autonomously pull data from \textbf{AWS Athena/Glue} \textbf{S3}}
   			\resumeItemDescription{Intended to be lightweight and exist on the cloud as a piece of a larger machine learning pipeline using \textbf{Sagemaker}}
@@ -172,35 +172,35 @@
       \resumeItemListStart
         \resumeItemDescription{\textbf{Overall Winner} at the Cohere 2023 Semantic Search Hackathon}
         \resumeItemDescription{Intelligent Slack bot that can \textbf{semantic search} for messages across languages as well as analyze emotions in a server}
-        \resumeItemDescription{Utilized \textbf{Flask} to train \textbf{CoHere} models on the \textbf{Google GoEmotion dataset}, with storage through \textbf{Pinecone}, and everything hosted on \textbf{Azure}}
-        \resumeItemDescription{Developed interface with \textbf{Slack Bolt API}, and improving time efficiency by up to \textbf{50\%} by designing a \textbf{multithreaded} system of back-end calls,}
+        \resumeItemDescription{Utilized \textbf{Flask} to train \textbf{co:here} models on the Google GoEmotion dataset, with storage through \textbf{Pinecone}}
+        \resumeItemDescription{Developed user interface with \textbf{Slack Bolt API}, and hosted everything on \textbf{AWS ec2} instances}
       \resumeItemListEnd
-  \resumeProjectItem{Mock Shell}{C++, PHP}
-      \resumeItemListStart
-        \resumeItemDescription{Mock Linux shell accepting multiple commands and flags with \textbf{multithreading} capability}
-        \resumeItemDescription{Utilized \textbf{POSIX} standard to implement and maintain low level, efficient C++ code} 
-        \resumeItemDescription{Developed and designed systems for piping, file I/O redirection, background processes, with the option of multithreading for each}
-      \resumeItemListEnd
-  \resumeProjectItem{makea.horse}{Javascript, HTML, CSS}
-      \resumeItemListStart
-        \resumeItemDescription{Fun website displaying generated image at a certain time created for a Speed Development Hackathon}
-        \resumeItemDescription{Written in a single Javascript file as emphasis on \textbf{monolithic} architecture and deployed through \textbf{Netlify}} 
-      \resumeItemListEnd
-   \resumeProjectItem{The Galactic Algorithm}{Python, tensorflow, keras, PIL}
+
+\resumeProjectItem{The Galactic Algorithm}{Python, tensorflow}
       \resumeItemListStart
         \resumeItemDescription{Heuristic algorithm that was designed to descramble a large image of mixed quadrants, written for 2023 TAMU Datathon}
-        \resumeItemDescription{Designed three separate heuristics which combined into the end algorithm, with a final accuracy of \textbf{97\%}}
-        \resumeItemDescription{Utilized augmented \textbf{Nearest Bodies} algorithm for object detection, and further reduced inaccuracy by matching edges} 
+        \resumeItemDescription{Final algorithm consisted of meshing three heuristics, with a final accuracy of \textbf{97\%} accross 10000 images}
+        \resumeItemDescription{Used a similar technique as Alpha Beta Pruning to optimize color difference thresholds for object detection} 
       \resumeItemListEnd
-   \resumeProjectItem{Personal Server}{C++, Twilio, Pinecone}
+
+  \resumeProjectItem{Mock Shell}{C++, PHP}
       \resumeItemListStart
-        \resumeItemDescription{Simple multithreaded server that reads/writes various inputs regarding personal calendar, habits, and data through \textbf{Twilio SMS}}
-        \resumeItemDescription{Designed with \textbf{multithreading} in mind, has capacity of handling single requests up to \textbf{1.2 GB}, with data stored on \textbf{Pinecone}}
+        \resumeItemDescription{Mock Linux shell accepting multiple commands and flags, with \textbf{multithreading} capability}
+        \resumeItemDescription{Utilized \textbf{POSIX} standard to implement and maintain low level, efficient C++ code} 
+        \resumeItemDescription{Developed and designed systems for piping, file I/O redirection, background processes}
       \resumeItemListEnd
+   
+   \resumeProjectItem{NUC Legion}{MetalLB, Ansible, Kubernetes / k8s}
+      \resumeItemListStart
+        \resumeItemDescription{Built a highly available, 6 node Kubernetes cluster with leftover Intel NUCs through \textbf{k8s} and \textbf{Ansible}}
+        \resumeItemDescription{Running in 1 master / 5 worker node configuration, with up to 3 node down tolerance.}
+      \resumeItemListEnd
+
     \resumeProjectItem{Small Distributed Social Network}{C++, gRPC, glog, cmake}
       \resumeItemListStart
-        \resumeItemDescription{Small distributed implementation of a social network service utilizing Chubby lock system and server clusters, and built with \textbf{grpc}. Designed to be scalable, fault tolerant, and highly available where failures are handled transparently to users. }
-        \resumeItemDescription{Server clusters split into master / slave, with \textbf{Chubby} running as coordinator, close to \textbf{99\%} uptime.}
+        \resumeItemDescription{Implementation of a social network service utilizing Chubby lock system with 3 server clusters communicating over \textbf{grpc}}
+        \resumeItemDescription{Designed to be scalable, fault tolerant, and highly available with up to 1 down cluster}
+        \resumeItemDescription{Server clusters split into master / slave, with \textbf{Chubby} running as coordinator, yielding close to \textbf{99\%} uptime.}
       \resumeItemListEnd
   \resumeProjectListEnd
 %--------Leadership-------------------
@@ -210,6 +210,8 @@
 %--------PROGRAMMING SKILLS------------
 \section{Technical Skills}
   \resumeSubHeadingListStart
+    \resumeSubItem{
+      \textbf{Skills}} {Competitive Programming (C++), Software Architecture, Full Stack, Distributed Engineering}
     \resumeSubItem{
       \textbf{Languages}} {\textit{(Proficient):} Python, Java, C++, Typescript, HTML, CSS \textit{(Familiar):} Go, Scheme, SQL, Rust}
     \resumeSubItem{
