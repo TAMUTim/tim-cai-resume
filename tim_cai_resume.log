@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2024.2.27)  27 FEB 2024 15:28
+This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2024.2.27)  5 JUL 2024 09:40
  restricted system commands enabled.
 **tim_cai_resume.tex
 (./tim_cai_resume.tex
@@ -616,27 +616,27 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-13>
  ***********
 Package rerunfilecheck Info: File `tim_cai_resume.out' has not changed.
-(rerunfilecheck)             Checksum: 8178769A591DAE54593BE5DC5893BD68;390.
+(rerunfilecheck)             Checksum: 5310EFB5843EFD3F11A4187CB683BEF9;483.
 )
 
 Here is how much of LuaTeX's memory you used:
- 13430 strings out of 476473
- 156290,1977958 words of node,token memory allocated
+ 13432 strings out of 476473
+ 156294,1977958 words of node,token memory allocated
  455 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 6 attribute, 57 glue_spec,
  4 attribute_list, 1 write nodes
-   avail lists: 1:1,2:2199,3:810,4:300,5:474,6:155,7:15955,8:2,9:974,10:21,11:10
-51
- 35284 multiletter control sequences out of 65536+600000
+   avail lists: 1:1,2:2100,3:789,4:288,5:475,6:146,7:14145,8:2,9:926,10:20,11:89
+6
+ 35285 multiletter control sequences out of 65536+600000
  59 fonts using 6227511 bytes
- 79i,11n,89p,361b,349s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,11n,89p,358b,349s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Windows/Fonts/trebucit.ttf><C:/Windows/Fonts/trebucbd.ttf><C:/Windows/Fonts/
 trebuc.ttf><C:/Users/timca/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
 onts/cm/cmsy10.pfb><C:/Users/timca/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/amsfonts/cm/cmsy9.pfb>
-Output written on tim_cai_resume.pdf (1 page, 88542 bytes).
+Output written on tim_cai_resume.pdf (1 page, 89170 bytes).
 
-PDF statistics: 60 PDF objects out of 1000 (max. 8388607)
- 6 named destinations out of 1000 (max. 131072)
- 33 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 64 PDF objects out of 1000 (max. 8388607)
+ 7 named destinations out of 1000 (max. 131072)
+ 41 words of extra memory for PDF output out of 10000 (max. 100000000)
 
