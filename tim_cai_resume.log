@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.16.0 (TeX Live 2023)  (format=lualatex 2023.8.31)  26 FEB 2025 09:03
+This is LuaHBTeX, Version 1.16.0 (TeX Live 2023)  (format=lualatex 2023.8.31)  17 MAR 2025 17:06
  restricted system commands enabled.
 **tim_cai_resume.tex
 (./tim_cai_resume.tex
@@ -620,7 +620,7 @@ Here is how much of LuaTeX's memory you used:
  455 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 6 attribute, 57 glue_spec,
  4 attribute_list, 1 write nodes
-   avail lists: 2:2161,3:804,4:294,5:321,6:149,7:14373,8:2,9:947,10:20,11:905
+   avail lists: 2:2200,3:819,4:300,5:333,6:152,7:15075,8:2,9:959,10:20,11:965
  33116 multiletter control sequences out of 65536+600000
  58 fonts using 4040783 bytes
  72i,11n,79p,358b,344s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -629,7 +629,7 @@ ts/Supplemental/Trebuchet MS Bold.ttf></System/Library/Fonts/Supplemental/Trebuc
 het MS.ttf></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 9.pfb>
-Output written on tim_cai_resume.pdf (1 page, 71604 bytes).
+Output written on tim_cai_resume.pdf (1 page, 71822 bytes).
 
 PDF statistics: 66 PDF objects out of 1000 (max. 8388607)
  51 compressed objects within 1 object stream
